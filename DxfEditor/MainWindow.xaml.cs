@@ -16,7 +16,7 @@ namespace DxfEditor
     {
         private float scaleX = 0.05f;
         private float scaleY = 0.05f;
-        private double strokeWeight = 40;
+        private double strokeWeight = 0.5;
 
         // DXF Document
         DXFLib.DXFDocument doc;
@@ -37,7 +37,6 @@ namespace DxfEditor
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
             dlg.FileName = "layout"; 
             dlg.DefaultExt = ".dxf";
-            dlg.InitialDirectory = System.IO.Directory.GetCurrentDirectory();
             dlg.Filter = "Autocad DXF Files (.dxf)|*.dxf";
 
             // Show open file dialog box 
